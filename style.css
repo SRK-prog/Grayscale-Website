@@ -1,0 +1,333 @@
+html{
+  scroll-behavior: smooth; 
+}
+
+body{
+  margin: 0;
+  padding: 0;  
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgba(232, 232, 232, 0.767);   
+}
+a{
+  text-decoration: none;
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0 3rem;
+  height: 3rem; 
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: -webkit-fill-available;
+  width: -moz-available;
+} 
+
+#title{
+  color: #000;
+}
+
+.title{
+  margin: auto 0;
+}
+
+/* ========================Menubar==================== */
+
+.dropbtn {
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  border-radius: .25em;
+}
+
+.hamburger{
+  fill: #000;
+}
+
+.hamburger:hover{
+  fill: rgb(69, 236, 69);
+}
+
+.btn-cont{
+  height: 100%;
+  margin: auto 0;
+}
+
+.navbar {
+  position: relative;
+  margin: auto 0;
+}
+
+.navbar-content {
+  float: left; 
+  display: none;
+  position: absolute;
+  left: -5rem;
+  background-color: white;
+  min-width: 160px;
+  border-radius: .25em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navbar-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar-content a:hover {
+  background-color: #ddd;
+  border-radius: .25em;
+}
+
+.navbar:hover .navbar-content {
+  display: block;
+}
+
+.navbar:hover .dropbtn {
+  color: rgb(255, 255, 255);
+}
+/* ==========================first image and content===================== */
+#top-content{
+  background-image: url("image1.jpg");
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative; 
+  
+}
+
+#top-content h1{
+  padding-top: 7rem ;
+  color: #ddd;
+  font-size: 3rem;  
+  position: absolute;
+}
+
+#top-content h4{
+  margin: 2rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 14rem;
+  
+}
+
+/* ============================second image and content================ */
+
+.top-content-sec{
+  background-image: url("wallpaper-computer-3.jpg");
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #000000a1;
+  background-repeat: no-repeat;
+}
+
+.top-content-sec h2{
+  text-align: center;
+  padding-top: 10rem; 
+  color: #ddd;
+  font-size: 2.3rem;
+}
+
+.top-content-sec p{
+  color: #ffffff;
+  margin: 2rem;
+  text-align: center;
+  padding-top: 1em;
+}
+
+#btn{
+  text-align: center;
+  padding: 20px;
+}
+
+.button{
+  padding: .60rem 1.1rem;
+  background-color: #2bc093;
+  color: #fff;
+  border-radius: 3em;
+  border: none;
+}
+
+.button:hover{
+  background-color:  #fff;
+  color: #000;
+}
+.button:active{
+  background-color:  #fff;
+  color: #000;
+}
+
+
+/* =================================main section==================== */
+
+.section{
+  margin-top: 4em;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+}
+.image{
+  height: 700px;
+  width: 800px;
+}
+
+/* ===========================Enter email======================= */
+
+.sent-box{
+    margin-top: 4rem;
+    background-image: url("img\ \(4\).jpg"); 
+    background-position: bottom center ;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;  
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+ .subscribe{
+  position: absolute;
+  margin-top: 11rem;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  
+}
+
+.updates{
+  padding-bottom: 1rem;
+}
+
+.button-mail{
+  margin-left: 1rem;
+  padding: .75rem 1rem;
+  background-color: #2bc093;
+  color: #fff;
+  border-radius: .20rem;
+  border: none;
+}
+
+.button-mail:hover{
+  background-color:  #fff;
+  color: #000;
+}
+
+.input{
+  padding: .65rem 1rem;
+  border-radius: .20rem;
+  outline: none;
+} 
+
+/* ==========================Footer================================= */
+
+.footer{
+  width: 100%;
+  color: black;
+  background-color: rgba(12, 12, 12, 0.994); 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+.footer-sec{
+  margin: 2.5rem 5% 0 5%;
+  padding: 1.5rem 2.5rem;
+  background-color: white;
+  height: 13rem;
+  border-bottom: 4px solid rgba(12, 89, 18, 0.802);
+  border-radius: .25em;
+  text-align: center;
+
+}
+/* ==========================social  medialinks================================ */
+.social{
+  background-color: rgba(12, 12, 12, 0.994);
+}
+
+.copyrights{
+  margin-top: 1.7rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon-img{
+  padding: .75rem;
+  text-align: center;
+  align-items: center;
+}
+
+/* =======================media query========================= */
+
+@media screen and (max-width: 800px) {
+  *::-webkit-scrollbar{
+    display: none;
+  }
+
+  .section{
+    margin-top: 5rem;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+  }
+  .image{
+    height: 400px;
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  *::-webkit-scrollbar{
+    display: none;
+  }
+
+  .section{
+    margin-top: 5rem;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+  }
+  .image{
+    height: 250px;
+    width: 325px;
+  }
+  .footer{
+    grid-template-columns: 1fr;
+  }  
+
+  .footer-sec{ 
+    height: 9rem;
+    width: 11rem;
+    margin: 4rem auto;   
+  }
+
+}
